@@ -15,6 +15,7 @@ Get the release history of different GitHub Repositery
   Tag object allows us to navigate through HTML.
   By looking at the source page of the git releases page I identify two main tags to get:
   The tags to get the releases number and the tags to get the next page of the release numbers.
+  
   The releases are appended in a list following their apparition order in the github website which ensure  an ordered list of versions with   the first version being the latest released. 
   
 ### Part 2
