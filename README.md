@@ -10,10 +10,11 @@ Get the release history of different GitHub Repositery
 
 ### Part 1
   To get the release from each repo I used the Beautiful Soup package for parsing HTML.
+  The different released are tracked on each github repositery on github-repo-url/tag (example:https://github.com/django/django/tags)
   Tag object allows us to navigate through HTML.
   By looking at the source page of the git release page I identify two main tags to get:
   The tags to get the releases number and the tags to get the next page of the release numbers.
- 
+  The releases are appended in a list following their apparition order in the github website which ensure  an ordered list of versions with   the first version being the latest released. 
   
 ### Part 2
   To standardized the release version across the 3 repositeries, I decided to apply some rules:
