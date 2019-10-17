@@ -5,7 +5,7 @@ import re
 
 
 def create_soup(url):
-    """Creation of a beautful object from an url"""
+    """Return beautiful object from an url"""
     req = urllib.request.urlopen(url)
     soup = BeautifulSoup(req, 'html.parser')
     return soup
