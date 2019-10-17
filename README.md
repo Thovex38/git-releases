@@ -5,9 +5,7 @@ Get the release history of different GitHub Repositery
 
 ### Prerequisites
 
-  Project run on python 3.6.
-  
-  Need the following library installed: bs4,urllib,json
+  Project run on python 3.6 with needed library: bs4,urllib,json
   
 
 ### Part 1
