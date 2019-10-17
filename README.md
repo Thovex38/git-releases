@@ -27,6 +27,9 @@ Get the release history of different GitHub Repository
 *  Abbrevation for the different stage of development : ('alpha'->'a','beta'->'b','incubating'->'i','candidate'->'c','release    candidate'->'rc')
 
 *  Exception for two specific releases : in tensorflow 'tflite-v0.1.7'->'tflitev0.1.7' and in kafka 'show'
+
+Once standardized, possible duplicates are removed. (for example tensorflow has released v0.6.0 and 0.6.0 standardized in 0.6.0)
+
 ## Authors
 
 Germain Geoffroy
