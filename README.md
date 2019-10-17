@@ -10,7 +10,8 @@ Get the release history of different GitHub Repositery
 
 ### Part 1
   To get the releases from each repo I used the Beautiful Soup package for parsing HTML.
-  The different releases are tracked on each github repositery on github-repo-url/tag (example:https://github.com/django/django/tags)
+  The different releases are tracked on each github repositery on github-repo-url/tag (example:https://github.com/django/django/tags).
+  
   Tag object allows us to navigate through HTML.
   By looking at the source page of the git releases page I identify two main tags to get:
   The tags to get the releases number and the tags to get the next page of the release numbers.
