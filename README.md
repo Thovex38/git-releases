@@ -1,57 +1,30 @@
-# git-releases
+# Git Releases
 
-One Paragraph of project description goes here
+Get the release history of different GitHub Repositery
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Prerequisites
-What things you need to install the software and how to install them
+### Prerequisites
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+  Project run on python 3.6
+  Need the following library installed:
+    - bs4
+    - urllib
+    - json
+  
 
-Say what the step will be
+### Part 1
+  To get the release from each repo I used the Beautiful Soup package for parsing HTML.
+  Tag object allows us to navigate through HTML.
+  By looking at the source page of the git release page I identify two main tags to get:
+  The tags to get the release number and the tags to get the next page of the release numbers.
+ 
+  
+### Part 2
+  To standardized the release version across the 3 repositeries, I decided to apply some rules:
+    - The beginning of each release should start with a number (in order to transform  v1.2 in 1.2 for example)
+    - No separation between the release number and the stage of development (for example 2.2.0rc2)
+    - Abbrevation for the different stage of development : ('alpha'->'a','beta'->'b','incubating'->'i','candidate'->'c','release    candidate'->'rc')
+    - Exception for two specific releases : in tensorflow 'tflite-v0.1.7'->'tflitev0.1.7' and in kafka 'show'
+## Authors
 
-Give the example
-And repeat
-
-until finished
-End with an example of getting some data out of the system or using it for a little demo
-
-Running the tests
-Explain how to run the automated tests for this system
-
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
-
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+Germain Geoffroy
