@@ -1,6 +1,6 @@
 # Git Releases
 
-Get the release history of different GitHub Repositery
+Get the release history of different GitHub Repository
 
 
 ### Prerequisites
@@ -10,7 +10,7 @@ Get the release history of different GitHub Repositery
 
 ### Part 1
   To get the releases from each repo I used the Beautiful Soup package for parsing HTML.
-  The different releases are tracked on each github repositery on github-repo-url/tag (example:https://github.com/django/django/tags).
+  The different releases are tracked on each github repository on github-repo-url/tag (example:https://github.com/django/django/tags).
   
   Tag object allows us to navigate through HTML.
   By looking at the source page of the git releases page I identify two main tags to get:
@@ -19,7 +19,7 @@ Get the release history of different GitHub Repositery
   The releases are appended in a list following their apparition order in the github website which ensure  an ordered list of versions with   the first version being the latest released. 
   
 ### Part 2
-  To standardized the releases version across the 3 repositeries, I decided to apply some rules:
+  To standardized the releases version across the 3 repositories, I decided to apply some rules:
 *  The beginning of each release should start with a number (in order to transform  v1.2 in 1.2 for example)
 
 * No separation between the release number and the stage of development (for example 2.2.0rc2)
