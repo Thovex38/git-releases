@@ -30,6 +30,6 @@ Get the release history of different GitHub Repository
 
 Once standardized, possible duplicates are removed. (for example tensorflow has released v0.6.0 and 0.6.0 standardized in 0.6.0)
 
-## Authors
+## Author
 
 Germain Geoffroy
